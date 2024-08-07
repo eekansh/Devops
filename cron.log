@@ -1,0 +1,18 @@
+28: command not found
++ echo 'print list of s3 buckets '
+print list of s3 buckets 
++ aws s3 ls
+2024-07-01 07:56:05 compilancepdfs
++ echo 'print list of ec2 instances '
+print list of ec2 instances 
++ aws ec2 describe-instances
++ jq '.Reservations.[].Instances[].InstanceId'
+"i-0233787c2ff086584"
+"i-0d42c668d898b02ae"
+"i-03f84bb3287f9461a"
++ echo 'list of lambda functions '
+list of lambda functions 
++ aws lambda list-functions
+{
+    "Functions": []
+}
